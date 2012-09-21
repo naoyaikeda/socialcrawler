@@ -1,0 +1,39 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="BrainChilld.TweetCapture.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="ConsumerToken" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">0Tlgs0r001S1JHxGy2Qgw</Value>
+    </Setting>
+    <Setting Name="ConsumerSecret" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">5YlhJANGjQ13aietPUM5oG0Qg4GqbwyAAxZrXtZLHAg</Value>
+    </Setting>
+    <Setting Name="TokenValue" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="TokenSecret" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="URL_REQUEST_TOKEN" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://twitter.com/oauth/request_token</Value>
+    </Setting>
+    <Setting Name="URL_REALM" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://twitter.com/</Value>
+    </Setting>
+    <Setting Name="URL_OAUTH2_AUTH" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://twitter.com/oauth/authorize</Value>
+    </Setting>
+    <Setting Name="Logger" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Logger</Value>
+    </Setting>
+    <Setting Name="URL_REQUEST_ACCESS_TOKEN" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://twitter.com/oauth/access_token</Value>
+    </Setting>
+    <Setting Name="SPLIT_SIZE" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">1048576</Value>
+    </Setting>
+    <Setting Name="ScriptPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+  </Settings>
+</SettingsFile>

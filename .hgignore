@@ -1,0 +1,8 @@
+syntax: glob
+libtwitter/bin/*
+libtwitter/obj/*
+TweetCapture/bin/*
+TweetCapture/obj/*
+TweetCapture Installer/Release/*
+*.user
+*.suo
