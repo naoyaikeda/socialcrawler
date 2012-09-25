@@ -119,8 +119,10 @@ namespace BrainChilld.TweetCapture
             {
                 twStream = CreateClient();
             }
-            catch (Exception)
+            catch (Exception ex)
             {
+                logger.Error(ex.Message);
+                logger.Error(ex.StackTrace);
             }
             int retry = 0;
 
@@ -155,8 +157,10 @@ namespace BrainChilld.TweetCapture
                                 }
                             }
                             var fi = new FileInfo(currentWorkPath);
+                            //logger.Info("Current size: {0}", fi.Length);
                             if (fi.Length > Properties.Settings.Default.SPLIT_SIZE)
                             {
+                                logger.Info("Rotating");
                                 sw.Close();
                                 currentWorkPath = Rotation();
                                 logger.Info("Current: {0}", currentWorkPath);
@@ -169,8 +173,10 @@ namespace BrainChilld.TweetCapture
                         }
                     }
                 }
-                catch (Exception)
+                catch (Exception ex)
                 {
+                    logger.Error(ex.Message);
+                    logger.Error(ex.StackTrace);
                     retry = 0;
                     twStream = null;
                     while (retry < 10 && twStream == null)
@@ -179,8 +185,10 @@ namespace BrainChilld.TweetCapture
                         {
                             twStream = CreateClient();
                         }
-                        catch (Exception)
+                        catch (Exception ex2)
                         {
+                            logger.Error(ex2.Message);
+                            logger.Error(ex2.StackTrace);
                         }
                         retry++;
                     }
@@ -194,8 +202,10 @@ namespace BrainChilld.TweetCapture
                             {
                                 twStream = CreateClient();
                             }
-                            catch (Exception)
+                            catch (Exception ex3)
                             {
+                                logger.Error(ex3.Message);
+                                logger.Error(ex3.StackTrace);
                             }
                             retry++;
                         }

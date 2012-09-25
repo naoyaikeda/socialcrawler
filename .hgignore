@@ -6,3 +6,4 @@ TweetCapture/obj/*
 TweetCapture Installer/Release/*
 *.user
 *.suo
+TweetCapture Installer/Debug/*
